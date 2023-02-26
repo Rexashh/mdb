@@ -44,9 +44,6 @@ ABOUTTEXT = (
     " '**Music**'.__\n**Version** : 2.3.1\n**Special Credits:**\n\t•Credit of"
     " lyrics: __genius.com__\n\nProject by Rexa"
 )
-STARTIMG = (
-    "https://graph.org/file/37fd19bff0d3834a065eb.jpg"
-)
 
 @Medusa.on_message(
     filters.command(['start', 'help'], ['/', '!'])
@@ -60,7 +57,6 @@ async def start_cmd(_, msg: Message):
         await msg.reply_sticker(sticker='CAACAgUAAx0EbLl4TwACBbhj-z7PFicBVzhEknFXxZh8_otuOwAC3wgAAh404Ve4ZveOmuzvDR4E')
         await msg.reply(
             text=PMTEXT,
-            photo=STARTIMG,
             reply_markup=PMKEYBOARD,
             disable_web_page_preview=True
         )

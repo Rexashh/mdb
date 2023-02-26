@@ -34,19 +34,15 @@ PMKEYBOARD = InlineKeyboardMarkup(
     ]
 )
 HELPTEXT = (
-    '**Menu Bantuan:**\n\n,'
-    ' Ikutin aja perintah dibawah ini ya :.\n\n'
-    '•`/song judul lagu`\n\n,'
-    ' kalo mau liat lirik doang ketik aja :.\n\n•`/lyrics nama lagu`'
+    '**Menu Bantuan:**\n\n'
+    'Ikutin aja perintah dibawah ini ya :.\n\n'
+    '👉🏻` /song judul lagu`\n\n'
+    ' kalo mau liat lirik doang ketik aja :.\n\n👉🏻`/lyrics nama lagu`'
 )
 ABOUTTEXT = (
-    "**Name** : MedusaMusic🎵\n**Username** : MedusaMousikibot\n**Description**"
-    " : <a href='https://en.wikipedia.org/wiki/Medusa'>**Medusa**</a> is a Greek"
-    " mythology.\n__Generally described as winged human females with living"
-    " venomous snakes in place of hair. Those who gazed into her eyes would"
-    " turn to stone.\nThe word '**Mousiki**' is the Greek word for"
+    "**Name** : xamusicrobot🎵\n**Username** : xamusicrobot\n**Keterangan**"
     " '**Music**'.__\n**Version** : 2.3.1\n**Special Credits:**\n\t•Credit of"
-    " lyrics: __genius.com__\n\nProject by Bibee"
+    " lyrics: __genius.com__\n\nProject by Rexa"
 )
 
 
@@ -59,7 +55,7 @@ async def start_cmd(_, msg: Message):
     ''' Response for /start command (private or groupe) '''
 
     if msg.chat.type == 'private':
-        await msg.reply_sticker(sticker='CAACAgIAAx0CXeethQACBIthRB3WPePSpGljt548kGW3uJ0s3gACkAUAAtJaiAGaVzjS0OoLfh4E')
+        await msg.reply_sticker(sticker='CAACAgQAAxkDAAEDaMdj-xDnDcmBeZxdmP9OAl-tTztunQAC5gkAApiT0FKgTUnAa_i7Vx4E')
         await msg.reply(
             text=PMTEXT,
             reply_markup=PMKEYBOARD,

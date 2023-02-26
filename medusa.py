@@ -44,7 +44,9 @@ ABOUTTEXT = (
     " '**Music**'.__\n**Version** : 2.3.1\n**Special Credits:**\n\t•Credit of"
     " lyrics: __genius.com__\n\nProject by Rexa"
 )
-
+STARTIMG = (
+    "https://graph.org/file/37fd19bff0d3834a065eb.jpg"
+)
 
 @Medusa.on_message(
     filters.command(['start', 'help'], ['/', '!'])
@@ -55,8 +57,9 @@ async def start_cmd(_, msg: Message):
     ''' Response for /start command (private or groupe) '''
 
     if msg.chat.type == 'private':
-        await msg.reply_animation(animation='CgACAgUAAxkDAAEDaflj-z3Kviq7fcCK0tYTHjXFmommQgACVgsAAoSB2Vf6PLKRSh7xkx4E')
+        await msg.reply_sticker(sticker='CAACAgUAAx0EbLl4TwACBbhj-z7PFicBVzhEknFXxZh8_otuOwAC3wgAAh404Ve4ZveOmuzvDR4E')
         await msg.reply(
+            photo=STARTIMG, 
             text=PMTEXT,
             reply_markup=PMKEYBOARD,
             disable_web_page_preview=True

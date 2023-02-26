@@ -19,19 +19,19 @@ async def lyrics(medusa:Medusa,msg: Message):
             text='__Harap tentukan kueri...__', 
         )
 
-    r_text = await msg.reply('__Searching...__')
+    r_text = await msg.reply('__Mencari...__')
     song_name = msg.text.split(None, 1)[1]
 
     lyric = api.search_song(song_name)
 
-    if lyric is None:return await r_text.edit('__No lyrics found for your query...__')
+    if lyric is None:return await r_text.edit('__Tidak ada lirik yang ditemukan untuk kueri Anda...__')
 
     lyric_title = lyric.title
     lyric_artist = lyric.artist
     lyrics_text = lyric.lyrics
 
     try:
-        await r_text.edit_text(f'__--**{lyric_title}**--__\n__{lyric_artist}\n__\n\n__{lyrics_text}__\n__Diekstraksi oleh @MedusaMousikibot__')
+        await r_text.edit_text(f'__--**{lyric_title}**--__\n__{lyric_artist}\n__\n\n__{lyrics_text}__\n__Diekstraksi oleh @xamusicdownloaderbot')
 
     except MessageTooLong:
         with open(f'downloads/{lyric_title}.txt','w') as f:
@@ -44,7 +44,7 @@ async def lyrics(medusa:Medusa,msg: Message):
         await msg.reply_document(
             document=f'downloads/{lyric_title}.txt',
             thumb='src/Medusa320px.png',
-            caption=f'\n__--{lyric_title}--__\n__{lyric_artist}__\n\n__Diekstraksi oleh @MedusaMousikibot__'
+            caption=f'\n__--{lyric_title}--__\n__{lyric_artist}__\n\n__Diekstraksi oleh @xamusicdownloaderbot__'
         )
 
         await r_text.delete()

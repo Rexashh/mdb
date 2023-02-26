@@ -59,8 +59,8 @@ async def start_cmd(_, msg: Message):
     if msg.chat.type == 'private':
         await msg.reply_sticker(sticker='CAACAgUAAx0EbLl4TwACBbhj-z7PFicBVzhEknFXxZh8_otuOwAC3wgAAh404Ve4ZveOmuzvDR4E')
         await msg.reply(
-            photo=STARTIMG, 
-            text=PMTEXT,
+            text=PMTEXT
+            photo=STARTIMG,
             reply_markup=PMKEYBOARD,
             disable_web_page_preview=True
         )

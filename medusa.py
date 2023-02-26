@@ -70,7 +70,7 @@ async def start_cmd(_, msg: Message):
                         InlineKeyboardButton(
                             text='Mulai saya di PM :)',
                             # Replace the `MedusaMousikibot` with your bot username
-                            url=f'http://t.me/xamusicdownloaderbot?help=true'
+                            url=f't.me/xamusicdownloaderbot?start=help'
                         )
                     ]
                 ]

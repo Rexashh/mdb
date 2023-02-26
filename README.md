@@ -1,50 +1,21 @@
-# MedusaMusic
+# MUSIC DOWNLOADER BOT
 
 <br>
 
-<p align="center">
-<img src="https://img.shields.io/github/forks/bibee-emio/medusamusic?style=social">
-<img src="https://img.shields.io/github/stars/bibee-emio/medusamusic?style=social">
-<img src="https://img.shields.io/github/watchers/bibee-emio/medusamusic?style=social">
-</p>
-<p align="center">
-<img src="src/banner.png">
-</p>
-
-<p align="center"> 
-<img src="https://img.shields.io/badge/License-GPLv3-blue.svg"> 
-<img src="https://img.shields.io/badge/version-v2.3.1-important">
-<img src="https://img.shields.io/pypi/pyversions/pyrogram?color=yellow">
-<img src="https://img.shields.io/github/issues-raw/bibee-emio/medusamusic">
-<img src="https://img.shields.io/github/issues-pr/bibee-emio/medusamusic">
-<img src="https://badgen.net/github/contributors/bibee-emio/medusamusic?color=green">  
-<img src="https://img.shields.io/github/last-commit/bibee-emio/medusamusic?color=blue">
-</p>
-<br>
-
-<p align="center"><i>A Telegram bot for Download songs in mp3 format from YouTube and Extract lyrics from Genius.com ❤️</i></p>
-
-<br>
 
 ## Commands 
+- `/start` - Periksa apakah bot online
+- `/song JKT48 - First Rabbit` - Ganti saja _'JKT48 - First Rabbit'_ dengan nama lagu yang anda inginkan
+- `/lyrics Imagine Dragons Battle Cry` - Ganti saja _'Imagine Dragons Battle Cry'_ dengan nama lagu yang anda inginkan
 
-> Reach [@MedusaMusic](https://t.me/MedusaMousikibot) on Telegram
-
-- `/start` - Check if the bot online
-- `/song TWICE Alcohol Free` - Just replace the _'TWICE Alcohol Free'_ with a song name what you want
-- `/lyrics Imagine Dragons Battle Cry` - Just replace the _'Imagine Dragons Battle Cry'_ with a song name what you want
-
-## Run Locally
-
-
-### Requirements
+## VPS ?
+Requirements
 
 - Python 3.8+
 - FFmpeg
 - Git Bash
 - Your Telegam API Hash & ID
 - Bot Token
-
 
 
 <br>
@@ -61,8 +32,8 @@ $ cd MedusaMusic
 ```sh
 $ pip3 install -r requirements.txt
 ```
-- Edit the [`config.py`](config.py) with your own values
-- Run the bot
+- Edit [`config.py`](config.py) dengan Data mu sendiri
+- Jalankan bot
 ```sh
 $ python3 medusa.py
 ```
@@ -71,20 +42,14 @@ $ python3 medusa.py
 
 <br>
 
-- Fork the repo
-- Just click the button below & follow the steps
+- Fork Repo Ini
+- Cukup klik tombol di bawah ini dan ikuti langkah-langkahnya
 
 <a href="https://heroku.com/deploy?template=https://github.com/Rexashh/mdb">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy"
   style="padding:35px">
 </a>
 
-## Special Credits
-
-- [Pyrogram](https://github.com/pyrogram/pyrogram)
-- [PyTube](https://github.com/pytube)
-- [Genius.com](https://genius.com)
-
-
+##
 <p align="center"><i>Fork the repo | Put a start | Follow me on github</i></p>
 <p align="center"><i>Thank You❤️</i></p>

@@ -40,7 +40,7 @@ HELPTEXT = (
     ' kalo mau liat lirik doang ketik aja :.\n\n👉🏻`/lyrics nama lagu`'
 )
 ABOUTTEXT = (
-    "**Name** : xamusicrobot🎵\n**Username** : xamusicrobot\n**Keterangan**"
+    "**Name** : XMDB🎵\n**Username** : @xamusicdownloaderbot\n**Keterangan**"
     " '**Music**'.__\n**Version** : 2.3.1\n**Special Credits:**\n\t•Credit of"
     " lyrics: __genius.com__\n\nProject by Rexa"
 )
@@ -63,14 +63,14 @@ async def start_cmd(_, msg: Message):
         )
     else:
         await msg.reply(
-            text='Hey! I am Online. PM me if you have any question on how to use me.',
+            text='Hai! Saya sedang online. PM saya jika Anda memiliki pertanyaan tentang cara menggunakan saya.',
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text='Start me in PM :)',
+                            text='Mulai saya di PM :)',
                             # Replace the `MedusaMousikibot` with your bot username
-                            url=f't.me/xamusicrobot?start=help'
+                            url=f'http://t.me/xamusicdownloaderbot?help=true'
                         )
                     ]
                 ]

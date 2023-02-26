@@ -7,9 +7,9 @@ from youtubesearchpython import VideosSearch
 
 
 text = (
-    '__I can\'t guess the song which in your mind.'
-    ' So please be kind to specify the song name.__'
-    '\n\nSyntax: ```/song <song name>```'
+    '__Saya tidak bisa menebak lagu yang ada di pikiran Anda.'
+    ' Jadi harap untuk menentukan nama lagu.__'
+    '\n\nPerintah: ```/song <nama lagu>```'
 )
 
 descargar = Descargar('downloads/')
@@ -27,18 +27,18 @@ async def song_dl(_, msg: Message):
     url = msg.text.split(None, 1)[1]
     url = extract_the_url(url=url)
     
-    if url == 0:return await r_text.edit('I could not find that song. Try with another keywords...')
+    if url == 0:return await r_text.edit('Saya tidak dapat menemukan lagu itu. Coba dengan kata kunci lain...')
 
     await r_text.edit('Downloading...')
 
     ytinfo = descargar.get_song(url)
 
     if ytinfo == 0:
-        await r_text.edit(f'Something Wrong\n\n☕️Take a Coffee and come again... :(')
+        await r_text.edit(f'Sesuatu yang salah\n\n☕️Ambil Kopi dan datang lagi... :(')
         return
 
     try:
-        await r_text.edit_text('Uploading...')
+        await r_text.edit_text('Mengunggah...')
     except MessageNotModified:
         pass
 
@@ -48,7 +48,7 @@ async def song_dl(_, msg: Message):
             duration=int(ytinfo.length),
             performer=str(ytinfo.author),
             title=f'{str(ytinfo.title)}',
-            caption=f"<a href='{url}'>__{ytinfo.title}__</a>\n\n__Downloaded by @MedusaMousikibot__"
+            caption=f"<a href='{url}'>__{ytinfo.title}__</a>\n\n__Downloaded by @xamusicdownloadeebot__"
         )
 
     await r_text.delete()

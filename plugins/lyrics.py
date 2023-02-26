@@ -16,7 +16,7 @@ async def lyrics(medusa:Medusa,msg: Message):
 
     if len(msg.command) == 1:
         return await msg.reply(
-            text='__Please specify the query...__', 
+            text='__Harap tentukan kueri...__', 
         )
 
     r_text = await msg.reply('__Searching...__')
@@ -31,20 +31,20 @@ async def lyrics(medusa:Medusa,msg: Message):
     lyrics_text = lyric.lyrics
 
     try:
-        await r_text.edit_text(f'__--**{lyric_title}**--__\n__{lyric_artist}\n__\n\n__{lyrics_text}__\n__Extracted by @MedusaMousikibot__')
+        await r_text.edit_text(f'__--**{lyric_title}**--__\n__{lyric_artist}\n__\n\n__{lyrics_text}__\n__Diekstraksi oleh @MedusaMousikibot__')
 
     except MessageTooLong:
         with open(f'downloads/{lyric_title}.txt','w') as f:
             f.write(f'{lyric_title}\n{lyric_artist}\n\n\n{lyrics_text}')
 
-        await r_text.edit_text('__Lyric too long. Sending as a text file...__')
+        await r_text.edit_text('__Lirik terlalu panjang. Mengirim sebagai file teks...__')
         await msg.reply_chat_action(
             action='upload_document'
         )
         await msg.reply_document(
             document=f'downloads/{lyric_title}.txt',
             thumb='src/Medusa320px.png',
-            caption=f'\n__--{lyric_title}--__\n__{lyric_artist}__\n\n__Extracted by @MedusaMousikibot__'
+            caption=f'\n__--{lyric_title}--__\n__{lyric_artist}__\n\n__Diekstraksi oleh @MedusaMousikibot__'
         )
 
         await r_text.delete()

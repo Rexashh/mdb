@@ -1,6 +1,6 @@
 {
-    "name":"MedusaMusic🎵",
-    "description":"A Telegram bot for Download songs in mp3 format from YouTube and Extract lyrics from Genius.com ❤️",
+    "name":"MDB🎵",
+    "description":"Bot Telegram untuk mengunduh lagu dalam format mp3 dari YouTube dan mengekstrak lirik dari Genius.com ❤️",
     "keywords": [
         "Python",
         "Telegram-bot",
@@ -12,29 +12,28 @@
         "heroku",
         "Bibee-Emio"
       ],
-    "repository": "https://github.com/bibee-emio/MedusaMusic",
-    "logo":"https://telegra.ph/file/d5aa388f60d4b40f84eaa.jpg",
+    "repository": "https://github.com/Rexashh/mdb",
+    "logo":"https://graph.org/file/7382e26bedadb44609643.jpg",
     "stack":"heroku-20",
     "image":"heroku/python",
-    "success_url":"https://t.me/MedusaMousikibot",
     "env":{
         "BOT_TOKEN":{
-            "description":"The bot token of your bot. You can get it from @BotFather Telegram",
+            "description":"Token bot dari bot Anda. Anda bisa mendapatkannya dari Telegram @BotFather",
             "value":"",
             "required":true
         },
         "API_HASH":{
-            "description":"Get your API Hash from https://my.telegram.org/auth",
+            "description":"Dapatkan Hash API Anda dari https://my.telegram.org/auth",
             "value":"",
             "required":true
         },
         "API_ID":{
-            "description":"Get your API ID from https://my.telegram.org/auth",
+            "description":"Dapatkan ID API Anda dari https://my.telegram.org/auth",
             "value":"",
             "required":true
         },
         "GENIUS_API":{
-            "description":"Get your Genius API from https://docs.genius.com/",
+            "description":"Dapatkan Genius API Anda dari https://docs.genius.com/",
             "value":"",
             "required":true
         }

@@ -55,7 +55,7 @@ async def start_cmd(_, msg: Message):
     ''' Response for /start command (private or groupe) '''
 
     if msg.chat.type == 'private':
-        await msg.reply_sticker(sticker='CAACAgQAAxkDAAEDaMdj-xDnDcmBeZxdmP9OAl-tTztunQAC5gkAApiT0FKgTUnAa_i7Vx4E')
+        await msg.reply_animation(animation='https://pin.it/20OQ4Jk')
         await msg.reply(
             text=PMTEXT,
             reply_markup=PMKEYBOARD,
